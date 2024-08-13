@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ata-test-demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    schema: job_data
+    username: postgres
+    password: 251220
+  jpa:
+    properties:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        "[hibernate.order_by.default_null_ordering]": last
